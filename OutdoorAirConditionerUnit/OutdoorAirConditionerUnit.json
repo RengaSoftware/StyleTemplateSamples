@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "defaultName": "External Air Conditioner Unit",
+    "description": "White parallelepiped on the facade of the house, sometimes dripping water on the head",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "General",
+      "text": "General",
+      "params": [
+        {
+          "name": "Material",
+          "text": "Material",
+          "type": "Id",
+          "entityTypeId": "0abcb18f-0aaf-4509-bf89-5c5fad9d5d8b"
+        }
+      ]
+    },
+    {
+      "name": "Dimensions",
+      "text": "Overall dimensions",
+      "params": [
+        {
+          "name": "Width",
+          "text": "Width",
+          "type": "Length",
+          "default": 800,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "Depth",
+          "text": "Depth",
+          "type": "Length",
+          "default": 300,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "Height",
+          "text": "Height",
+          "type": "Length",
+          "default": 500,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "PlateWidth",
+          "text": "Mounting plate width",
+          "type": "Length",
+          "default": 30,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "PlateDepth",
+          "text": "Mounting plate depth",
+          "type": "Length",
+          "default": 350,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "PlateHeight",
+          "text": "Mounting plate height",
+          "type": "Length",
+          "default": 10,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "LeftPlateOffset",
+          "text": "Offset of the left mounting plate widthwise",
+          "type": "Length",
+          "default": 100,
+          "min": 0,
+          "max": 100000
+        },
+        {
+          "name": "RightPlateOffset",
+          "text": "Offset of the right mounting plate widthwise",
+          "type": "Length",
+          "default": 700,
+          "min": 0,
+          "max": 100000
+        }
+      ]
+    },
+    {
+      "name": "Gas",
+      "text": "Gas",
+      "params": [
+        {
+          "name": "ValveHeightOffset",
+          "text": "Valve height offset",
+          "type": "Length",
+          "default": 200,
+          "min": 0,
+          "max": 100000
+        },
+        {
+          "name": "ValveDepthOffset",
+          "text": "Valve depth offset",
+          "type": "Length",
+          "default": 150,
+          "min": 0,
+          "max": 100000
+        },
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeConnectorType",
+          "default": "Compressed"
+        },
+        {
+          "name": "NominalDiameter",
+          "text": "Nominal diameter",
+          "type": "Length",
+          "default": 7,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "ThreadSize",
+          "text": "Thread size",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeThreadSize",
+          "default": "D0_50"
+        },
+        {
+          "name": "Diameter",
+          "text": "Outer diameter",
+          "type": "Length",
+          "default": 7,
+          "min": 1,
+          "max": 100000
+        }
+      ]
+    },
+    {
+      "name": "Fluid",
+      "text": "Fluid",
+      "params": [
+        {
+          "name": "ValveHeightOffset",
+          "text": "Valve height offset",
+          "type": "Length",
+          "default": 150,
+          "min": 0,
+          "max": 100000
+        },
+        {
+          "name": "ValveDepthOffset",
+          "text": "Valve depth offset",
+          "type": "Length",
+          "default": 150,
+          "min": 0,
+          "max": 100000
+        },
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeConnectorType",
+          "default": "Compressed"
+        },
+        {
+          "name": "NominalDiameter",
+          "text": "Nominal diameter",
+          "type": "Length",
+          "default": 10,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "ThreadSize",
+          "text": "Thread size",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeThreadSize",
+          "default": "D0_50"
+        },
+        {
+          "name": "Diameter",
+          "text": "Outer diameter",
+          "type": "Length",
+          "default": 10,
+          "min": 1,
+          "max": 100000
+        }
+      ]
+    },
+    {
+      "name": "Sewage",
+      "text": "Sewage",
+      "params": [
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeConnectorType",
+          "default": "Compressed"
+        },
+        {
+          "name": "NominalDiameter",
+          "text": "Nominal diameter",
+          "type": "Length",
+          "default": 10,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "ThreadSize",
+          "text": "Thread size",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeThreadSize",
+          "default": "D0_50"
+        },
+        {
+          "name": "Diameter",
+          "text": "Outer diameter",
+          "type": "Length",
+          "default": 10,
+          "min": 1,
+          "max": 100000
+        }
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "name": "Gas",
+      "text": "Gas",
+      "flowDirection": "Inlet",
+      "systemCategories": [
+        "OtherPipeSystem"
+      ]
+    },
+    {
+      "name": "Fluid",
+      "text": "Fluid",
+      "flowDirection": "Outlet",
+      "systemCategories": [
+        "OtherPipeSystem"
+      ]
+    },
+    {
+      "name": "Sewage",
+      "text": "Sewage",
+      "flowDirection": "Outlet",
+      "systemCategories": [
+        "DomesticSewage"
+      ]
+    },
+    {
+      "name": "PowerSupply",
+      "text": "Power supply",
+      "flowDirection": "Inlet",
+      "systemCategories": [
+        "LightingCircuit",
+        "PowerCircuit",
+        "OtherElectricalSystem"
+      ]
+    },
+    {
+      "name": "Control",
+      "text": "Control",
+      "flowDirection": "InletAndOutlet",
+      "systemCategories": [
+        "LightingCircuit",
+        "PowerCircuit",
+        "OtherElectricalSystem"
+      ]
+    }
+  ]
+}
