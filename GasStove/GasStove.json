@@ -1,0 +1,90 @@
+{
+    "metadata":{
+      "defaultName": "Gas Stove",
+      "description": "Simple gas stove",
+      "version": "1.0.0",
+      "author": "Renga Software"
+   },
+    "styleParameters":[
+       {
+          "name": "General",
+          "text": "General",
+          "params": [
+             {
+                "name": "Material",
+                "text": "Material",
+                "type": "Id",
+                "entityTypeId": "0abcb18f-0aaf-4509-bf89-5c5fad9d5d8b"
+             }
+          ]
+       },
+       {
+          "name": "Dimensions",
+          "text": "Overall dimensions",
+          "params": [
+            {
+              "name": "Width",
+              "text": "Width",
+              "type": "Length",
+              "default": 600,
+              "min": 480,
+              "max": 600
+            },
+            {
+              "name": "Depth",
+              "text": "Depth",
+              "type": "Length",
+              "default": 600,
+              "min": 480,
+              "max": 600
+            },
+            {
+              "name": "Height",
+              "text": "Height",
+              "type": "Length",
+              "default": 850,
+              "min": 800,
+              "max": 1000
+            }
+          ]
+       },
+       {
+         "name": "Gas",
+         "text": "Gas",
+         "params": [
+           {
+             "name": "ConnectionType",
+             "text": "Connection type",
+             "type": "CoreEnum",
+             "coreEnumType": "PipeConnectorType",
+             "default": "Thread"
+           },
+           {
+             "name": "NominalDiameter",
+             "text": "Nominal diameter",
+             "type": "Length",
+             "default": 7,
+             "min": 1,
+             "max": 100000
+           },
+           {
+             "name": "ThreadSize",
+             "text": "Nominal diameter",
+             "type": "CoreEnum",
+             "coreEnumType": "PipeThreadSize",
+             "default": "D0_50"
+           }
+         ]
+       }
+    ],
+    "ports": [
+       {
+           "name": "Gas",
+           "text": "Gas",
+           "flowDirection": "Inlet",
+           "systemCategories": [
+               "Gas"
+           ]
+       }
+   ]
+ }
