@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "defaultName": "Two-Plane Cross",
+    "description": "Pipeline Component",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "General",
+      "text": "General",
+      "params": [
+        {
+          "name": "Material",
+          "text": "Material",
+          "type": "Id",
+          "entityTypeId": "0abcb18f-0aaf-4509-bf89-5c5fad9d5d8b"
+        }
+      ]
+    },
+    {
+      "name": "Dimensions",
+      "text": "Overall dimensions",
+      "params": [
+        {
+          "name": "CrossOutsideDiameter",
+          "text": "Outer diameter of the cross",
+          "type": "Length",
+          "default": 20,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "CenterToOutletDistance",
+          "text": "Distance from center to outlet",
+          "type": "Length",
+          "default": 30,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "InletToCenterDistance",
+          "text": "Distance from inlet to center",
+          "type": "Length",
+          "default": 30,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "Branch1OutsideDiameter",
+          "text": "Outer diameter of branch 1",
+          "type": "Length",
+          "default": 20,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "CenterToBranch1Distance",
+          "text": "Distance from center to branch 1",
+          "type": "Length",
+          "default": 30,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "AngleBetweenOutletAndBranch1",
+          "text": "Angle between outlet and branch 1",
+          "type": "Angle",
+          "default": 90,
+          "min": 0,
+          "max": 180
+        },
+        {
+          "name": "Branch2OutsideDiameter",
+          "text": "Outer diameter of branch 2",
+          "type": "Length",
+          "default": 20,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "CenterToBranch2Distance",
+          "text": "Distance from center to branch 2",
+          "type": "Length",
+          "default": 30,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "AngleBetweenOutletAndBranch2",
+          "text": "Angle between outlet and branch 2",
+          "type": "Angle",
+          "default": 90,
+          "min": 0,
+          "max": 180
+        },
+        {
+          "name": "AngleBetweenBranch1AndBranch2",
+          "text": "The angle between the planes of branches",
+          "type": "Angle",
+          "default": 90,
+          "min": 0,
+          "max": 180
+        }
+      ]
+    },
+    {
+      "name": "Port1",
+      "text": "Port 1",
+      "params": [
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeConnectorType",
+          "default": "Weld"
+        },
+        {
+          "name": "ThreadSize",
+          "text": "Nominal diameter",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeThreadSize",
+          "default": "D0_50"
+        },
+        {
+          "name": "NominalDiameter",
+          "text": "Nominal diameter",
+          "type": "Length",
+          "default": 20,
+          "min": 1,
+          "max": 1000000
+        }
+      ]
+    },
+    {
+      "name": "Port2",
+      "text": "Port 2",
+      "params": [
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeConnectorType",
+          "default": "Weld"
+        },
+        {
+          "name": "ThreadSize",
+          "text": "Nominal diameter",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeThreadSize",
+          "default": "D0_50"
+        },
+        {
+          "name": "NominalDiameter",
+          "text": "Nominal diameter",
+          "type": "Length",
+          "default": 20,
+          "min": 1,
+          "max": 1000000
+        }
+      ]
+    },
+    {
+      "name": "Branch1",
+      "text": "Branch 1",
+      "params": [
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeConnectorType",
+          "default": "Weld"
+        },
+        {
+          "name": "ThreadSize",
+          "text": "Nominal diameter",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeThreadSize",
+          "default": "D0_50"
+        },
+        {
+          "name": "NominalDiameter",
+          "text": "Nominal diameter",
+          "type": "Length",
+          "default": 20,
+          "min": 1,
+          "max": 1000000
+        }
+      ]
+    },
+    {
+      "name": "Branch2",
+      "text": "Branch 2",
+      "params": [
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeConnectorType",
+          "default": "Weld"
+        },
+        {
+          "name": "ThreadSize",
+          "text": "Nominal diameter",
+          "type": "CoreEnum",
+          "coreEnumType": "PipeThreadSize",
+          "default": "D0_50"
+        },
+        {
+          "name": "NominalDiameter",
+          "text": "Nominal diameter",
+          "type": "Length",
+          "default": 20,
+          "min": 1,
+          "max": 1000000
+        }
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "name": "Port1",
+      "text": "Port 1",
+      "flowDirection": "InletAndOutlet",
+      "systemCategories": [
+        "DomesticColdWater",
+        "DomesticHotWater",
+        "DomesticSewage",
+        "Gas",
+        "Firewater",
+        "Heating",
+        "GaseousFireSuppression",
+        "Rainwater",
+        "IndustrialColdWater",
+        "IndustrialHotWater",
+        "IndustrialSewage",
+        "OtherPipeSystem"
+      ]
+    },
+    {
+      "name": "Port2",
+      "text": "Port 2",
+      "flowDirection": "InletAndOutlet",
+      "systemCategories": [
+        "DomesticColdWater",
+        "DomesticHotWater",
+        "DomesticSewage",
+        "Gas",
+        "Firewater",
+        "Heating",
+        "GaseousFireSuppression",
+        "Rainwater",
+        "IndustrialColdWater",
+        "IndustrialHotWater",
+        "IndustrialSewage",
+        "OtherPipeSystem"
+      ]
+    },
+    {
+      "name": "Branch1",
+      "text": "Branch 1",
+      "flowDirection": "InletAndOutlet",
+      "systemCategories": [
+        "DomesticColdWater",
+        "DomesticHotWater",
+        "DomesticSewage",
+        "Gas",
+        "Firewater",
+        "Heating",
+        "GaseousFireSuppression",
+        "Rainwater",
+        "IndustrialColdWater",
+        "IndustrialHotWater",
+        "IndustrialSewage",
+        "OtherPipeSystem"
+      ]
+    },
+    {
+      "name": "Branch2",
+      "text": "Branch 2",
+      "flowDirection": "InletAndOutlet",
+      "systemCategories": [
+        "DomesticColdWater",
+        "DomesticHotWater",
+        "DomesticSewage",
+        "Gas",
+        "Firewater",
+        "Heating",
+        "GaseousFireSuppression",
+        "Rainwater",
+        "IndustrialColdWater",
+        "IndustrialHotWater",
+        "IndustrialSewage",
+        "OtherPipeSystem"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "defaultName": "Non-return damper",
+    "description": "Duct accessory",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "General",
+      "text": "General",
+      "params": [
+        {
+          "name": "Material",
+          "text": "Material",
+          "type": "Id",
+          "entityTypeId": "0abcb18f-0aaf-4509-bf89-5c5fad9d5d8b"
+        }
+      ]
+    },
+    {
+      "name": "Dimensions",
+      "text": "Overall dimensions",
+      "params": [
+        {
+          "name": "DamperShape",
+          "text": "Damper shape",
+          "type": "UserEnum",
+          "default": "Circle",
+          "items": [
+            {
+              "key": "Circle",
+              "text": "Circle"
+            },
+            {
+              "key": "Rectangle",
+              "text": "Rectangle"
+            }
+          ]
+        },
+        {
+          "name": "BodyDiameter",
+          "text": "Damper diameter",
+          "type": "Length",
+          "default": 100,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "BodyWidth",
+          "text": "Damper width",
+          "type": "Length",
+          "default": 100,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "BodyHeight",
+          "text": "Damper height",
+          "type": "Length",
+          "default": 100,
+          "min": 1,
+          "max": 1000000
+        },
+        {
+          "name": "BodyLength",
+          "text": "Damper length",
+          "type": "Length",
+          "default": 200,
+          "min": 1,
+          "max": 1000000
+        }
+      ]
+    },
+    {
+      "name": "Inlet",
+      "text": "Inlet",
+      "params": [
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "DuctConnectorType",
+          "default": "SlipOn"
+        }
+      ]
+    },
+    {
+      "name": "Outlet",
+      "text": "Outlet",
+      "params": [
+        {
+          "name": "ConnectionType",
+          "text": "Connection type",
+          "type": "CoreEnum",
+          "coreEnumType": "DuctConnectorType",
+          "default": "SlipOn"
+        }
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "name": "Inlet",
+      "text": "Inlet",
+      "flowDirection": "Inlet",
+      "systemCategories": [
+        "Ventilation",
+        "Exhaust",
+        "Pressurization",
+        "SmokeExhaust",
+        "Vacuum",
+        "OtherDuctSystem"
+      ]
+    },
+    {
+      "name": "Outlet",
+      "text": "Outlet",
+      "flowDirection": "Outlet",
+      "systemCategories": [
+        "Ventilation",
+        "Exhaust",
+        "Pressurization",
+        "SmokeExhaust",
+        "Vacuum",
+        "OtherDuctSystem"
+      ]
+    }
+  ]
+}
