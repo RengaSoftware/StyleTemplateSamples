@@ -1,0 +1,276 @@
+{
+    "metadata":{
+        "defaultName": "Water duct heater",
+        "description": "Duct accessory. Water duct heater",
+        "version": "1.0.0",
+        "author": "Renga Software"
+    },
+    "styleParameters":[
+        {
+            "name": "General",
+            "text": "General",
+            "params": [
+                {
+                    "name": "Material",
+                    "text": "Material",
+                    "type": "Id",
+                    "entityTypeId": "0abcb18f-0aaf-4509-bf89-5c5fad9d5d8b"
+                }
+            ]
+        },
+        {
+            "name": "Dimensions",
+            "text": "Overall dimensions",
+            "params": [
+                {
+                    "name": "HeaterWidth",
+                    "text": "Heater width",
+                    "type": "Length",
+                    "default": 276,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "HeaterHeight",
+                    "text": "Heater height",
+                    "type": "Length",
+                    "default": 255,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "HeaterDepth",
+                    "text": "Heater depth",
+                    "type": "Length",
+                    "default": 313,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "DuctShape",
+                    "text": "Duct shape",
+                    "type": "UserEnum",
+                    "default": "Circle",
+                    "items": [
+                        {
+                            "key": "Circle",
+                            "text": "Circle"
+                        },
+                        {
+                            "key": "Rectangle",
+                            "text": "Rectangle"
+                        }
+                    ]
+                },
+                {
+                    "name": "CoolantNipplesPosition",
+                    "text": "Coolant nipples position",
+                    "type": "UserEnum",
+                    "default": "Across",
+                    "items": [
+                        {
+                            "key": "Along",
+                            "text": "Along the duct"
+                        },
+                        {
+                            "key": "Across",
+                            "text": "Across the duct"
+                        }
+                    ]
+                },
+                {
+                    "name": "DistanceBetweenCoolantNipples",
+                    "text": "Distance between coolant nipples",
+                    "type": "Length",
+                    "default": 212,
+                    "min": 50,
+                    "max": 1000
+                },
+                {
+                    "name": "CoolantNominalDiameter",
+                    "text": "Coolant nominal diameter",
+                    "type": "Length",
+                    "default": 20,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "CoolantNippleLength",
+                    "text": "Coolant nipple length",
+                    "type": "Length",
+                    "default": 50,
+                    "min": 1,
+                    "max": 1000
+                }
+            ]
+        },
+        {
+            "name": "Inlet",
+            "text": "Duct inlet",
+            "params": [
+                {
+                    "name": "ConnectionType",
+                    "text": "Connection type",
+                    "type": "CoreEnum",
+                    "coreEnumType": "DuctConnectorType",
+                    "default": "SlipOn"
+                },
+                {
+                    "name": "NominalDiameter",
+                    "text": "Nominal diameter",
+                    "type": "Length",
+                    "default": 200,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "NominalWidth",
+                    "text": "Nominal width",
+                    "type": "Length",
+                    "default": 200,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "NominalHeight",
+                    "text": "Nominal height",
+                    "type": "Length",
+                    "default": 200,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "NippleLength",
+                    "text": "Nipple length",
+                    "type": "Length",
+                    "default": 50,
+                    "min": 1,
+                    "max": 1000
+                }
+            ]
+        },
+        {
+            "name": "Outlet",
+            "text": "Duct outlet",
+            "params": [
+                {
+                    "name": "ConnectionType",
+                    "text": "Connection type",
+                    "type": "CoreEnum",
+                    "coreEnumType": "DuctConnectorType",
+                    "default": "SlipOn"
+                },
+                {
+                    "name": "NominalDiameter",
+                    "text": "Nominal diameter",
+                    "type": "Length",
+                    "default": 200,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "NominalWidth",
+                    "text": "Nominal width",
+                    "type": "Length",
+                    "default": 200,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "NominalHeight",
+                    "text": "Nominal height",
+                    "type": "Length",
+                    "default": 200,
+                    "min": 1,
+                    "max": 1000
+                },
+                {
+                    "name": "NippleLength",
+                    "text": "Nipple length",
+                    "type": "Length",
+                    "default": 50,
+                    "min": 1,
+                    "max": 1000
+                }
+            ]
+        },
+        {
+            "name":"Coolant",
+            "text":"Coolant",
+            "params":[
+                {
+                    "name":"ConnectionType",
+                    "text":"Connection type",
+                    "type":"CoreEnum",
+                    "coreEnumType":"PipeConnectorType",
+                    "default": "Thread"
+                },
+                {
+                    "name": "ThreadSize",
+                    "text": "Nominal diameter",
+                    "type": "CoreEnum",
+                    "coreEnumType": "PipeThreadSize",
+                    "default": "D0_50"
+                },
+                {
+                    "name": "NominalDiameter",
+                    "text": "Nominal diameter",
+                    "type": "Length",
+                    "default": 25,
+                    "min": 1,
+                    "max": 1000
+                }
+            ]
+        }
+    ],
+    "ports": [
+        {
+            "name": "Inlet",
+            "text": "Duct inlet",
+            "flowDirection": "Inlet",
+            "portRole":"TransitPort",
+            "systemCategories": [
+                "Ventilation",
+                "Exhaust",
+                "Pressurization",
+                "SmokeExhaust",
+                "Vacuum",
+                "OtherDuctSystem"
+            ]
+        },
+        {
+            "name": "Outlet",
+            "text": "Duct outlet",
+            "flowDirection": "Outlet",
+            "portRole":"TransitPort",
+            "systemCategories": [
+                "Ventilation",
+                "Exhaust",
+                "Pressurization",
+                "SmokeExhaust",
+                "Vacuum",
+                "OtherDuctSystem"
+            ]
+        },
+        {
+            "name": "TopCoolant",
+            "text": "Top coolant",
+            "flowDirection": "InletAndOutlet",
+            "portRole": "EndPort",
+            "systemCategories": [
+                "Heating",
+                "OtherPipeSystem"
+            ]
+        },
+        {
+            "name": "BottomCoolant",
+            "text": "Bottom coolant",
+            "flowDirection": "InletAndOutlet",
+            "portRole": "EndPort",
+            "systemCategories": [
+                "Heating",
+                "OtherPipeSystem"
+            ]
+        }
+    ]
+ }
