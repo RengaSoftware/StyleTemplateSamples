@@ -1,0 +1,88 @@
+{
+    "metadata": {
+        "defaultName": "Reinforcing mesh",
+        "description": "Reinforcing mesh",
+        "version": "1.0.0",
+        "author": "Renga software"
+    },
+    "styleParameters": [
+        {
+            "name": "Dimensions",
+            "text": "Dimensions",
+            "params": [
+                {
+                    "name": "Length",
+                    "text": "Length",
+                    "type": "Length",
+                    "default": "1000",
+                    "min": "200",
+                    "max": "12000"
+                },
+                {
+                    "name": "Width",
+                    "text": "Width",
+                    "type": "Length",
+                    "default": "800",
+                    "min": "100",
+                    "max": "12000"
+                }
+            ]
+        },
+        {
+            "name": "LongitudinalReinforcement",
+            "text": "Longitudinal reinforcement",
+            "params": [
+                {
+                    "name": "RebarStyleId",
+                    "text": "Rebar",
+                    "type": "Id",
+                    "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+                },
+                {
+                    "name": "Step",
+                    "text": "Step",
+                    "type": "Length",
+                    "default": 100,
+                    "min": 0,
+                    "max": 9999999
+                },
+                {
+                    "name": "FreeEnd",
+                    "text": "Free end",
+                    "type": "Length",
+                    "default": 25,
+                    "min": 0,
+                    "max": 9999999
+                }
+            ]
+        },
+        {
+            "name": "TransverseReinforcement",
+            "text": "Transverse reinforcement",
+            "params": [
+                {
+                    "name": "RebarStyleId",
+                    "text": "Rebar",
+                    "type": "Id",
+                    "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+                },
+                {
+                    "name": "Step",
+                    "text": "Step",
+                    "type": "Length",
+                    "default": 100,
+                    "min": 0,
+                    "max": 9999999
+                },
+                {
+                    "name": "FreeEnd",
+                    "text": "Free end",
+                    "type": "Length",
+                    "default": 25,
+                    "min": 0,
+                    "max": 9999999
+                }
+            ]
+        }
+    ]
+}
