@@ -1,0 +1,96 @@
+{
+    "metadata": {
+        "defaultName": "Reinforcing flat cage",
+        "description": "Reinforcing flat cage",
+        "version": "1.0.0",
+        "author": "Renga software"
+    },
+    "styleParameters": [
+        {
+            "name": "Dimensions",
+            "text": "Dimensions",
+            "params": [
+                {
+                    "name": "Length",
+                    "text": "Length",
+                    "type": "Length",
+                    "default": "1000",
+                    "min": "200",
+                    "max": "12000"
+                },
+                {
+                    "name": "Width",
+                    "text": "Width",
+                    "type": "Length",
+                    "default": "200",
+                    "min": "100",
+                    "max": "12000"
+                },
+                {
+                    "name": "LeftDowelLength",
+                    "text": "Left dowel length",
+                    "type": "Length",
+                    "default": "500",
+                    "min": "0",
+                    "max": "12000"
+                },
+                {
+                    "name": "RightDowelLength",
+                    "text": "Right dowel length",
+                    "type": "Length",
+                    "default": "300",
+                    "min": "0",
+                    "max": "12000"
+                }
+            ]
+        },
+        {
+            "name": "LongitudinalReinforcement",
+            "text": "Longitudial reinforcement of cage",
+            "params": [
+                {
+                    "name": "RebarStyleId",
+                    "text": "Rebar",
+                    "type": "Id",
+                    "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+                },
+                {
+                    "name": "FreeEnd",
+                    "text": "Free end",
+                    "type": "Length",
+                    "default": 25,
+                    "min": 0,
+                    "max": 12000
+                }
+            ]
+        },
+        {
+            "name": "TransverseReinforcement",
+            "text": "Transverse reinforcement",
+            "params": [
+                {
+                    "name": "RebarStyleId",
+                    "text": "Rebar",
+                    "type": "Id",
+                    "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+                },
+                {
+                    "name": "Step",
+                    "text": "Step",
+                    "type": "Length",
+                    "default": 100,
+                    "min": 0,
+                    "max": 12000
+                },
+                {
+                    "name": "FreeEnd",
+                    "text": "Free end",
+                    "type": "Length",
+                    "default": 25,
+                    "min": 0,
+                    "max": 12000
+                }
+            ]
+        }
+    ]
+}
