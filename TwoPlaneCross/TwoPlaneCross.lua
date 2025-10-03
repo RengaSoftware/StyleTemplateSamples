@@ -85,7 +85,7 @@ function MakeDrawingGeometry(inletLength, outletLength, branch1Length, branch2Le
   
   geometry:AddGeometrySet2D(bodySymbol)
   geometry:AddGeometrySet2D(branch1Symbol, branch1SymbolPlacement)
-  geometry:AddGeometrySet2D(branch1Symbol, branch2SymbolPlacement)
+  geometry:AddGeometrySet2D(branch2Symbol, branch2SymbolPlacement)
 
   return geometry
 end

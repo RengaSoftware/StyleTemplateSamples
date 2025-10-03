@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "defaultName": "External Air Conditioner Unit",
-    "description": "White parallelepiped on the facade of the house, sometimes dripping water on the head",
+    "defaultName": "Outdoor air conditioner unit",
+    "description": "Equipment",
     "version": "1.0.0",
     "author": "Renga Software"
   },
@@ -48,7 +48,7 @@
         },
         {
           "name": "PlateWidth",
-          "text": "Mounting plate width",
+          "text": "Plate width",
           "type": "Length",
           "default": 30,
           "min": 1,
@@ -56,7 +56,7 @@
         },
         {
           "name": "PlateDepth",
-          "text": "Mounting plate depth",
+          "text": "Plate depth",
           "type": "Length",
           "default": 350,
           "min": 1,
@@ -64,7 +64,7 @@
         },
         {
           "name": "PlateHeight",
-          "text": "Mounting plate height",
+          "text": "Plate height",
           "type": "Length",
           "default": 10,
           "min": 1,
@@ -72,7 +72,7 @@
         },
         {
           "name": "LeftPlateOffset",
-          "text": "Offset of the left mounting plate widthwise",
+          "text": "Left plate offset",
           "type": "Length",
           "default": 100,
           "min": 0,
@@ -80,7 +80,7 @@
         },
         {
           "name": "RightPlateOffset",
-          "text": "Offset of the right mounting plate widthwise",
+          "text": "Right plate offset",
           "type": "Length",
           "default": 700,
           "min": 0,
@@ -171,7 +171,7 @@
           "name": "NominalDiameter",
           "text": "Nominal diameter",
           "type": "Length",
-          "default": 10,
+          "default": 7,
           "min": 1,
           "max": 100000
         },
@@ -201,13 +201,13 @@
           "text": "Connection type",
           "type": "CoreEnum",
           "coreEnumType": "PipeConnectorType",
-          "default": "Compressed"
+          "default": "Socket"
         },
         {
           "name": "NominalDiameter",
           "text": "Nominal diameter",
           "type": "Length",
-          "default": 10,
+          "default": 20,
           "min": 1,
           "max": 100000
         },
@@ -217,14 +217,6 @@
           "type": "CoreEnum",
           "coreEnumType": "PipeThreadSize",
           "default": "D0_50"
-        },
-        {
-          "name": "Diameter",
-          "text": "Outer diameter",
-          "type": "Length",
-          "default": 10,
-          "min": 1,
-          "max": 100000
         }
       ]
     }

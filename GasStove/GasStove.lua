@@ -26,26 +26,26 @@ end
 local doorSymbolPlace = Placement3D(Point3D(0, -depth / 2, height / 4),
                                     Vector3D(0, -1, 0), Vector3D(1, 0, 0))
 
--- Function creates a symbol representing a cooking surface with 4 rings 
+-- Function creates a symbol representing a cooking surface with 4 circles and rectangle 
 function MakeCookingSurfaceSymbol()
     -- Diameter is equal to 120, see technical task drawing
     local radius = 120 / 2
     local x = width / 4
     local y = depth / 4
-    -- Create rings
-    local ring1 = CreateCircle2D(Point2D(x, y), radius)
-    local ring2 = CreateCircle2D(Point2D(x, -y), radius)
-    local ring3 = CreateCircle2D(Point2D(-x, -y), radius)
-    local ring4 = CreateCircle2D(Point2D(-x, y), radius)
+    -- Create circles
+    local circle1 = CreateCircle2D(Point2D(x, y), radius)
+    local circle2 = CreateCircle2D(Point2D(x, -y), radius)
+    local circle3 = CreateCircle2D(Point2D(-x, -y), radius)
+    local circle4 = CreateCircle2D(Point2D(-x, y), radius)
     -- Create rectangle for symbolic geometry   
     local rectangle = CreateRectangle2D(Point2D(0, 0), 0, width,
                                         depth)
     -- Create geometry set
     local geometrySet = GeometrySet2D()
-    geometrySet:AddCurve(ring1)
-    geometrySet:AddCurve(ring2)
-    geometrySet:AddCurve(ring3)
-    geometrySet:AddCurve(ring4)
+    geometrySet:AddCurve(circle1)
+    geometrySet:AddCurve(circle2)
+    geometrySet:AddCurve(circle3)
+    geometrySet:AddCurve(circle4)
     geometrySet:AddCurve(rectangle)
     -- Return the resulting symbol
     return geometrySet
