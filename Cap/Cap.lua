@@ -65,3 +65,12 @@ if isThread then
 else
   port:SetPipeParameters(connectionType, parameters.Port.NominalDiameter)
 end
+
+-- Create spine for insulation skeleton main part.
+local spine = CreateLineSegment3D(Point3D(0, 0, 0), Point3D(dimensions.FaceToFaceDimension, 0, 0))
+-- Create insulation profile.
+local profile = CreateCircle2D(Point2D(0, 0), dimensions.OutsideDiameter/2)
+-- Define the placement of the insulation profile.
+local profilePlacement = Placement3D(Point3D(0, 0, 0), Vector3D(1, 0, 0), Vector3D(0, 1, 0))
+-- Define insulation skeleton for the Cap.
+Style.SetInsulationSkeleton({{{profile}, {profilePlacement}, spine, InsulationCapType.None, InsulationCapType.Flat}})

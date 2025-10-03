@@ -97,3 +97,19 @@ SetDuctPortParameters(inlet,  parameters.Inlet)
 local outlet = Style.GetPort("Outlet")
 outlet:SetPlacement(Placement3D(Point3D(dimensions.BodyLength / 2, 0, 0), Vector3D(1, 0, 0), Vector3D(0, 1, 0)))
 SetDuctPortParameters(outlet, parameters.Outlet)
+
+-- Create spine for main part of insulation.
+local spine = CreateLineSegment3D(Point3D(-dimensions.BodyLength / 2, 0, 0), Point3D(dimensions.BodyLength / 2, 0, 0))
+-- Create insulation profile.
+function CreateInsulationProfile()
+  if shapeIsCircle then
+	-- The Damper shape is "Circle".
+    return CreateCircle2D(Point2D(0, 0), dimensions.BodyDiameter / 2)
+  end
+  -- The Damper shape is "Rectangle".
+  return CreateRectangle2D(Point2D(0, 0), 0, dimensions.BodyWidth, dimensions.BodyHeight)
+end
+-- Define the placement of the insulation profile.
+local profilePlacement = Placement3D(Point3D(-dimensions.BodyLength / 2, 0, 0), Vector3D(1, 0, 0), Vector3D(0, 1, 0))
+-- Define insulation skeleton for the non-return damper.
+Style.SetInsulationSkeleton({{{CreateInsulationProfile()}, {profilePlacement}, spine}})
