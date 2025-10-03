@@ -192,3 +192,25 @@ local symbolGeometry = MakeDrawingGeometry(armLength, armLength, armLength, armL
 
 -- Set symbol geometry for the style.
 Style.SetSymbolGeometry(symbolGeometry)
+
+-- Define insulation skeleton for main pipe and branches
+function MakeBranchInsulationSegment(length, diameter, rotator)
+  local spine = CreateLineSegment3D(Point3D(0, 0, 0), Point3D(length, 0, 0)):Transform(rotator)
+  local profile = CreateCircle2D(Point2D(0, 0), diameter / 2)
+  local profilePlacement = Placement3D(Point3D(0, 0, 0), Vector3D(1, 0, 0), Vector3D(0, 0, -1)):Transform(rotator)
+
+  return {{profile}, {profilePlacement}, spine}
+end
+
+function MakeMainInsulationSegment()
+  local spine = CreateLineSegment3D(Point3D(-dimensions.InletToCenterDistance, 0, 0), Point3D(dimensions.CenterToOutletDistance, 0, 0))
+  local profile = CreateCircle2D(Point2D(0, 0), dimensions.CrossOutsideDiameter / 2)
+  local profilePlacement = Placement3D(Point3D(-dimensions.InletToCenterDistance, 0, 0), Vector3D(1, 0, 0), Vector3D(0, 0, -1))
+
+  return {{profile}, {profilePlacement}, spine}
+end
+
+local branchSegment1 = MakeBranchInsulationSegment(dimensions.CenterToBranch1Distance, dimensions.Branch1OutsideDiameter, branch1Rotator)
+local branchSegment2 = MakeBranchInsulationSegment(dimensions.CenterToBranch2Distance, dimensions.Branch2OutsideDiameter, branch2Rotator)
+ 
+Style.SetInsulationSkeleton({MakeMainInsulationSegment(), branchSegment1, branchSegment2})
