@@ -14,6 +14,7 @@ Style templates of engineering system objects:
 - [Non-Return Damper](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/NonReturnDamper)
 - [Two Plane Cross](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/TwoPlaneCross)
 - [Outdoor Air Conditioner Block sample](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/OutdoorAirConditionerUnit)
+- [Water Duct Heater](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/WaterDuctHeater)
 
 Reinforcement unit style templates:
 - [Reinforcing Mesh](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/ReinforcingMesh)
