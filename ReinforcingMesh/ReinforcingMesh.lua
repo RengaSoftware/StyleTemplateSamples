@@ -17,9 +17,8 @@ end
 
 -- The function of getting the rebar radius by ID
 function GetRebarRadius(rebarStyleId)
-    local style = Project.GetRebarStyle(rebarStyleId)
-    local parameters = CastToParameterContainer(style)
-    return parameters:GetParameterValues().RebarDiameter / 2
+    local style = GetRebarStyle(rebarStyleId)
+    return GetParameterValue(style, "RebarDiameter") / 2
 end
 
 -- Function of laying the rebars with free ends and a finishing step on one side

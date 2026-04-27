@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "defaultName": "Bottom mesh and vertical rebars",
+    "description": "Bottom reinforcing mesh and vertical rebars created by placing single rebars",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "General",
+      "text": "General",
+      "params": [
+        {
+          "name": "BottomClearCover",
+          "text": "Bottom clear cover",
+          "type": "Length",
+          "default": 35,
+          "min": 10,
+          "max": 100
+        },
+        {
+          "name": "SideClearCover",
+          "text": "Side clear cover",
+          "type": "Length",
+          "default": 35,
+          "min": 10,
+          "max": 100
+        },
+        {
+          "name": "TopClearCover",
+          "text": "Top clear cover",
+          "type": "Length",
+          "default": 35,
+          "min": 10,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "name": "BottomMesh",
+      "text": "Bottom mesh",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 150,
+          "min": 50,
+          "max": 500
+        }
+      ]
+    },
+    {
+      "name": "VerticalRebars",
+      "text": "Vertical rebars",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "OverhangLength",
+          "text": "Overhang length",
+          "type": "Length",
+          "default": 500,
+          "min": 0,
+          "max": 1000
+        },
+        {
+          "name": "Count",
+          "text": "Count",
+          "type": "UserEnum",
+          "items": [
+            {
+              "key": 4,
+              "text": "4"
+            },
+            {
+              "key": 8,
+              "text": "8"
+            },
+            {
+              "key": 12,
+              "text": "12"
+            }
+          ],
+          "default": 4
+        }
+      ]
+    }
+  ]
+}
