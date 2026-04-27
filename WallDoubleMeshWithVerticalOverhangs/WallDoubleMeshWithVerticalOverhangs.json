@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "defaultName": "Wall double reinforcing mesh with vertical overhangs",
+    "description": "Double mesh + C-shaped fixators + overhangs",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "ClearCover",
+      "text": "Clear cover",
+      "params": [
+        {
+          "name": "ClearCoverInner",
+          "text": "Inner",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "ClearCoverOuter",
+          "text": "Outer",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "ClearCoverLeft",
+          "text": "Left",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "ClearCoverRight",
+          "text": "Right",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "ClearCoverTop",
+          "text": "Top",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "ClearCoverBottom",
+          "text": "Bottom",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "ClearCoverOpenings",
+          "text": "For openings (windows and doors)",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "name": "LongitudinalRebar",
+      "text": "Longitudinal rebar",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 300,
+          "min": 50,
+          "max": 500
+        }
+      ]
+    },
+    {
+      "name": "TransverseRebar",
+      "text": "Transverse rebar",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 300,
+          "min": 50,
+          "max": 500
+        }
+      ]
+    },
+    {
+      "name": "Overhang",
+      "text": "Vertical overhang",
+      "params": [
+        {
+          "name": "UseHook",
+          "text": "Use hook",
+          "type": "Boolean",
+          "default": true
+        },
+        {
+          "name": "TopOverhang1",
+          "text": "Top overhang 1",
+          "type": "Length",
+          "default": 300,
+          "min": 0,
+          "max": 1000
+        },
+        {
+          "name": "TopOverhang2",
+          "text": "Top overhang  2",
+          "type": "Length",
+          "default": 600,
+          "min": 0,
+          "max": 1000
+        },
+        {
+          "name": "HookLength",
+          "text": "Hook length",
+          "type": "Length",
+          "default": 150,
+          "min": 0,
+          "max": 500
+        }
+      ]
+    },
+    {
+      "name": "CShapedFixator",
+      "text": "C-shaped fixator",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "C-shaped rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "LegLength",
+          "text": "Leg length",
+          "type": "Length",
+          "default": 15,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "HorizontalStep",
+          "text": "Horizontal step",
+          "type": "Integer",
+          "default": 2,
+          "min": 1,
+          "max": 10
+        },
+        {
+          "name": "VerticalStep",
+          "text": "Vertical step",
+          "type": "Integer",
+          "default": 2,
+          "min": 1,
+          "max": 10
+        },
+        {
+          "name": "UseChessOrder",
+          "text": "Use chess order",
+          "type": "Boolean",
+          "default": false
+        }
+      ]
+    }
+  ]
+}
