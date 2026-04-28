@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "defaultName": "Floor double mesh with U-shape edge reinforcement",
+    "description": "Floor double mesh with supports and U-shape edge reinforcement",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "General",
+      "text": "General",
+      "params": [
+        {
+          "name": "UseEdgeReinforcement",
+          "text": "Use edge reinforcement",
+          "type": "Boolean",
+          "default": true
+        },
+        {
+          "name": "UseMeshSupports",
+          "text": "Use mesh supports",
+          "type": "Boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "ClearCover",
+      "text": "Clear cover",
+      "params": [
+        {
+          "name": "Top",
+          "text": "Top face",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Bottom",
+          "text": "Bottom face",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Side",
+          "text": "Side faces",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "name": "LongitudinalRebar",
+      "text": "Longitudinal rebar",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Longitudinal rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 300,
+          "min": 10,
+          "max": 1000
+        }
+      ]
+    },
+    {
+      "name": "TransverseRebar",
+      "text": "Transverse rebar",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Transverse rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 300,
+          "min": 10,
+          "max": 1000
+        }
+      ]
+    },
+    {
+      "name": "EdgeReinforcement",
+      "text": "Edge reinforcement",
+      "params": [
+        {
+          "name": "EdgeRebarStyleId",
+          "text": "Edge rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "LeftLegLength",
+          "text": "Left leg length",
+          "type": "Length",
+          "default": 200,
+          "min": 50,
+          "max": 500
+        },
+        {
+          "name": "RightLegLength",
+          "text": "Right leg length",
+          "type": "Length",
+          "default": 200,
+          "min": 50,
+          "max": 500
+        },
+        {
+          "name": "EdgeStep",
+          "text": "Edge rebar step",
+          "type": "Length",
+          "default": 300,
+          "min": 100,
+          "max": 1000
+        },
+        {
+          "name": "BendingFactor",
+          "text": "Bending factor",
+          "type": "Real",
+          "default": 3,
+          "min": 1,
+          "max": 10
+        }
+      ]
+    },
+    {
+      "name": "MeshSupports",
+      "text": "Mesh supports",
+      "params": [
+        {
+          "name": "SupportsRebarStyleId",
+          "text": "Supports rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "BaseLength",
+          "text": "Base length",
+          "type": "Length",
+          "default": 300,
+          "min": 50,
+          "max": 600
+        },
+        {
+          "name": "LegLength",
+          "text": "Leg length",
+          "type": "Length",
+          "default": 100,
+          "min": 20,
+          "max": 300
+        },
+        {
+          "name": "HorizontalStep",
+          "text": "Horizontal step",
+          "type": "Length",
+          "default": 600,
+          "min": 200,
+          "max": 2000
+        },
+        {
+          "name": "VerticalStep",
+          "text": "Vertical step",
+          "type": "Length",
+          "default": 600,
+          "min": 200,
+          "max": 2000
+        },
+        {
+          "name": "UseChessOrder",
+          "text": "Use chess order",
+          "type": "Boolean",
+          "default": true
+        }
+      ]
+    }
+  ]
+}
