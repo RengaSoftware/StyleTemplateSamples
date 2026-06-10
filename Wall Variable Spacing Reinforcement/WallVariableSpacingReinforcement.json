@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "defaultName": "Wall reinforcement with variable spacing in a row",
+    "description": "ZonedRebarRowParameters, start zones, end zones, main row, different bar spacing at edges and in the middle",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "ClearCover",
+      "text": "Clear cover",
+      "params": [
+        {
+          "name": "Inner",
+          "text": "Inner",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Outer",
+          "text": "Outer",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Top",
+          "text": "Top",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Bottom",
+          "text": "Bottom",
+          "type": "Length",
+          "default": 0,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Left",
+          "text": "Left end",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Right",
+          "text": "Right end",
+          "type": "Length",
+          "default": 20,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "Openings",
+          "text": "Openings",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "name": "HorizontalRebar",
+      "text": "Horizontal rebar (longitudinal)",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 200,
+          "min": 50,
+          "max": 1000
+        }
+      ]
+    },
+    {
+      "name": "StartZone",
+      "text": "Vertical rebar - start zone",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 100,
+          "min": 50,
+          "max": 1000
+        },
+        {
+          "name": "ZoneSize",
+          "text": "Zone size",
+          "type": "Length",
+          "default": 1500,
+          "min": 100,
+          "max": 100000
+        },
+        {
+          "name": "TopOverhang",
+          "text": "Top overhang",
+          "type": "Length",
+          "default": 900,
+          "min": 0,
+          "max": 10000
+        }
+      ]
+    },
+    {
+      "name": "MainZone",
+      "text": "Vertical rebar - main zone",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 250,
+          "min": 50,
+          "max": 1000
+        },
+        {
+          "name": "TopOverhang",
+          "text": "Top overhang",
+          "type": "Length",
+          "default": 600,
+          "min": 0,
+          "max": 10000
+        }
+      ]
+    },
+    {
+      "name": "EndZone",
+      "text": "Vertical rebar - end zone",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 100,
+          "min": 50,
+          "max": 1000
+        },
+        {
+          "name": "ZoneSize",
+          "text": "Zone size",
+          "type": "Length",
+          "default": 1000,
+          "min": 100,
+          "max": 100000
+        },
+        {
+          "name": "TopOverhang",
+          "text": "Top overhang",
+          "type": "Length",
+          "default": 1200,
+          "min": 0,
+          "max": 10000
+        }
+      ]
+    },
+    {
+      "name": "CShapedFixators",
+      "text": "C-shaped fixators",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Fixator rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "LegLength",
+          "text": "Leg length",
+          "type": "Length",
+          "default": 15,
+          "min": 5,
+          "max": 100
+        },
+        {
+          "name": "HorizontalStep",
+          "text": "Horizontal step (cells)",
+          "type": "Integer",
+          "default": 2,
+          "min": 1,
+          "max": 10
+        },
+        {
+          "name": "VerticalStep",
+          "text": "Vertical step (cells)",
+          "type": "Integer",
+          "default": 2,
+          "min": 1,
+          "max": 10
+        },
+        {
+          "name": "UseChessOrder",
+          "text": "Use chess order",
+          "type": "Boolean",
+          "default": true
+        }
+      ]
+    }
+  ]
+}
