@@ -29,7 +29,7 @@ function meshParameters(styleParameters)
 end
 
 function createSupports(styleParameters)
-    -- Rebar chair parameters: rebar style, base length, leg length, height (1 = auto)
+    -- Rebar chair parameters: rebar style, base length, leg length, height (see https://help.rengabim.com/stdl/en/struct_rebar_chair_parameters.html)
     local chairParams = RebarChairParameters(
         styleParameters.MeshSupports.SupportsRebarStyleId,
         styleParameters.MeshSupports.BaseLength,
@@ -55,7 +55,7 @@ function createEdgeReinforcement(styleParameters)
     -- U-shaped edge reinforcement: style, edge reinforcement step, leg length
     local layout = EdgeReinforcementCenteredLayout(styleParameters.EdgeReinforcement.EdgeStep)
     local selectors = {ObjectSideSelector(FloorSide.Side)}
-    -- Length = 1 for auto-tuning
+    -- Length = 1 see https://help.rengabim.com/stdl/en/struct_u_shaped_rebar_parameters.html
     local uShaped = UShapedRebarParameters(
         styleParameters.EdgeReinforcement.EdgeRebarStyleId,
         1,

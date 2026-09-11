@@ -99,7 +99,7 @@ function createSupports(styleParameters)
     local params = styleParameters.CShapedFixators
     
     -- Create C-shaped rebar fixator
-    -- Length = 1 for auto-tuning
+    -- See https://help.rengabim.com/stdl/en/struct_c_shaped_rebar_parameters.html
     local cShaped = CShapedRebarParameters(
         params.RebarStyleId,
         1,

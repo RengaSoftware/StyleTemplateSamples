@@ -48,7 +48,7 @@ function meshParameters(styleParameters)
     local frontMesh = ReinforcingMeshParameters(longitudinalParams, transFront)
     local backMesh = ReinforcingMeshParameters(longitudinalParams, transBack)
     
-    -- C-shaped rebar (Length = 1 for auto-tuning)
+    -- C-shaped rebar (see https://help.rengabim.com/stdl/en/struct_c_shaped_rebar_parameters.html)
     local cShaped = CShapedRebarParameters(
         styleParameters.CShapedFixator.RebarStyleId,
         1,
