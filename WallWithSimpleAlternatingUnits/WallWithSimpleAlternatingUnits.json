@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "defaultName": "Wall with simple alternating units",
+    "description": "Minimal example: alternating reinforcement units in a row along the wall",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "General",
+      "text": "General",
+      "params": [
+        {
+          "name": "ClearCover",
+          "text": "Clear cover",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "name": "AlternatingUnits",
+      "text": "Alternating reinforcement units",
+      "params": [
+        {
+          "name": "EvenUnitId",
+          "text": "Even reinforcement unit style",
+          "type": "Id",
+          "entityTypeId": "7ee13bd6-7c0a-47d3-adce-35b8e0dae28a"
+        },
+        {
+          "name": "OddUnitId",
+          "text": "Odd reinforcement unit style",
+          "type": "Id",
+          "entityTypeId": "7ee13bd6-7c0a-47d3-adce-35b8e0dae28a"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 400,
+          "min": 50,
+          "max": 2000
+        },
+        {
+          "name": "Displacement",
+          "text": "Displacement",
+          "type": "Length",
+          "default": 0,
+          "min": 0,
+          "max": 1000
+        }
+      ]
+    }
+  ]
+}
