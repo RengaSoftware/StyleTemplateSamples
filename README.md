@@ -21,12 +21,15 @@ Reinforcement unit style templates:
 - [Reinforcing Flat Cage](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/ReinforcingFlatCage)
 
 Reinforcement style templates:
-- [Isolated Foundation Single Rebars Reinforcement](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/IsolatedFoundationSingleRebarsReinforcement)
 - [Wall Double Mesh With Vertical Overhangs](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/WallDoubleMeshWithVerticalOverhangs)
-- [Floor Double Mesh With Edge Reinforcement](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/FloorDoubleMeshWithEdgeReinforcement)
-- [Floor UShaped Rebars With Hooks](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/FloorUShapedRebarsWithHooks)
 - [Wall Variable Spacing Reinforcement](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/WallVariableSpacingReinforcement)
 - [Wall Rebar Overhang Shapes](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/WallRebarOverhangShapes)
+- [Wall With Simple Alternating Units](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/WallWithSimpleAlternatingUnits)
+- [Column Single Rebars Reinforcement](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/ColumnSingleRebarsReinforcement)
+- [Floor Double Mesh With Edge Reinforcement](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/FloorDoubleMeshWithEdgeReinforcement)
+- [Floor UShaped Rebars With Hooks](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/FloorUShapedRebarsWithHooks)
+- [Isolated Foundation Single Rebars Reinforcement](https://github.com/RengaSoftware/StyleTemplateSamples/tree/master/IsolatedFoundationSingleRebarsReinforcement)
+
 
 Other links
 -----

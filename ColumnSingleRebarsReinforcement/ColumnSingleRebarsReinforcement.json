@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "defaultName": "Column reinforcement with longitudinal and transverse rebars",
+    "description": "Longitudinal rebars at the corners of a rectangular column section, and transverse rebars laid out along the column height",
+    "version": "1.0.0",
+    "author": "Renga Software"
+  },
+  "styleParameters": [
+    {
+      "name": "General",
+      "text": "General",
+      "params": [
+        {
+          "name": "BottomClearCover",
+          "text": "Bottom clear cover",
+          "type": "Length",
+          "default": 0,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "SideClearCover",
+          "text": "Side clear cover",
+          "type": "Length",
+          "default": 25,
+          "min": 10,
+          "max": 100
+        },
+        {
+          "name": "TopClearCover",
+          "text": "Top clear cover",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "name": "LongitudinalRebars",
+      "text": "Longitudinal rebars",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "FreeEnd",
+          "text": "Free end",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "TopOverhangEnabled",
+          "text": "Enable top overhang",
+          "type": "Boolean",
+          "default": false
+        },
+        {
+          "name": "TopOverhang",
+          "text": "Top overhang length",
+          "type": "Length",
+          "default": 300,
+          "min": 0,
+          "max": 2000
+        }
+      ]
+    },
+    {
+      "name": "TransverseRebars",
+      "text": "Transverse rebars",
+      "params": [
+        {
+          "name": "RebarStyleId",
+          "text": "Rebar style",
+          "type": "Id",
+          "entityTypeId": "608edb78-96f3-40a6-a0ec-71000105581b"
+        },
+        {
+          "name": "Step",
+          "text": "Step",
+          "type": "Length",
+          "default": 200,
+          "min": 50,
+          "max": 500
+        },
+        {
+          "name": "FreeEnd",
+          "text": "Free end",
+          "type": "Length",
+          "default": 25,
+          "min": 0,
+          "max": 100
+        }
+      ]
+    }
+  ]
+}
